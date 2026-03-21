@@ -35,6 +35,7 @@ function page1Animation() {
     }, "-=0.5")
 }
 
+page1Animation()
 
 function page2Animation() {
     let tl2 = gsap.timeline({
