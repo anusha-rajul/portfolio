@@ -43,7 +43,7 @@ function page2Animation() {
         trigger: ".projects-section",
         scroller: "body",
         // markers: true,
-        start: "top 50%",
+        start: "top 90%",
         end: "top 0",
         scrub: 2
     }

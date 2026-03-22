@@ -181,20 +181,16 @@ footer {
         flex-direction: column;
     }
 
-    /* .nav-links {
-        display: none;
-
-      
+    .hero-section{
+        margin-bottom: 5rem;
     }
-    .menu-icon {
-        display: block; 
-        position: absolute;
-        right:10px;  
-        top:60px;
-    } */
+    .projects-section {
+        margin-bottom: 5rem;
+    }
 
     .about-section {
         grid-template-columns: 1fr;
+        margin-bottom: 5rem;
     }
 }
 
