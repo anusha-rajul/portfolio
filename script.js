@@ -35,7 +35,7 @@ function page1Animation() {
     }, "-=0.5")
 }
 
-page1Animation()
+// page1Animation()
 
 function page2Animation() {
     let tl2 = gsap.timeline({
@@ -44,7 +44,7 @@ function page2Animation() {
         scroller: "body",
         // markers: true,
         start: "top 50%",
-        end: "top 0",
+        end: "top -90%",
         scrub: 2
     }
     })
@@ -80,7 +80,7 @@ function page2Animation() {
     })
 }
 
-page2Animation()
+// page2Animation()
 
 
 function page3Animation() {
@@ -109,7 +109,7 @@ function page3Animation() {
     })
 }
 
-page3Animation()
+// page3Animation()
 
 function page4Animation() {
     let tl4 = gsap.timeline({
@@ -129,4 +129,4 @@ function page4Animation() {
     })
 }
 
-page4Animation()
+// page4Animation()

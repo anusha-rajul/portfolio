@@ -15,9 +15,7 @@ body {
 }
 
 .container {
-    max-width: 1400px;
     margin: 0 auto;
-    width:90%;
 }
 
 a {
@@ -28,19 +26,15 @@ ul {
     list-style: none;
 }
 .navbar {
-    /* max-width: 1000px;
-    margin: auto; */
-    background-color: #ECF4E5;
-    border-radius: 50px;
     padding: 10px;
-    margin-bottom:5rem;
+    background-color: #EEDBA1;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .nav-links {
     display: flex;
-    gap:2rem;
+    gap:4rem;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -52,14 +46,20 @@ ul {
 /* ------------------------------Hero section------------------------------- */
 
 .hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+    background-color: #EEDBA1;
+}
+.hero-section-content {
     display: flex;
     flex-direction: column;
+    gap:40px;
     align-items: center;
     justify-content: center;
-    gap:20px;
-    margin-bottom: 20rem;
 }
-
 .hero-section img {
     max-width: 500px;
     width: 100%;
@@ -76,41 +76,39 @@ h2 {
     background-color:#ECF4E5;
     padding: 1rem 2rem;
     border-radius: 50px;
+    display: inline-block;
+    border: 2px solid #d5dccf;
+    box-shadow: 5px 5px 30px 0px #d5dccf;
 }
 
 /*-------------------------project section--------------------------------*/
 
 .projects-section {
-    margin-bottom: 20rem;
     text-align: center;
-   
+    background-color: #112319;
+    padding: 20px;
 }
 
 .projects-section h2 {
     margin-bottom: 5rem;
+    color:#fff;
 }
 
 .grid-container {
-    max-width: 70rem;
+    max-width: 1000px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr;
+    gap:8rem;
     align-items: center;
     justify-items: center;
-    gap:4rem;
+    grid-auto-rows: 1fr;
 }
 
 .grid-item {
-    background-color: #ECF4E5;
+    background-color: #EEDBA1;
+    padding: 4rem 8rem;
     height: 100%;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap:10px;
-    border: 2px solid #ECF4E5;
-    box-shadow:10px 10px 10px 0px #d5dccf;
 }
 .grid-item img {
     max-width:300px;
@@ -123,42 +121,15 @@ h2 {
     gap:20px;
 }
 
-/*------------------skills section----------------------*/
-.skills-section {
-    margin-bottom: 10rem;
-}
-
-.skills-section h2 {
-    text-align: center;
-    margin-bottom: 5rem;
-}
-
-.skills-section ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap:10rem;
-}
-
-.skills-section ul li {
-    background-color: #d5dccf;
-    padding: 2rem 4rem;
-    border-radius: 20px;
-}
 
 
-/*-------------------------about section--------------------------------*/
-
-.about-section {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 10rem 4rem;
+.skills-about-section {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin-bottom: 20rem;
-    border: 2px solid #d5dccf;
-    box-shadow: 10px 10px 30px 0px #d5dccf;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
+    padding: 50px;
+    background-color: #EEDBA1;
 }
 
 /*------------------------footer----------------------------*/
@@ -168,6 +139,9 @@ footer {
     align-items: center;
     justify-content: space-around;
     margin-bottom: 10rem;
+    padding: 50px;
+    background-color: #112319;
+    color:#fff;
 }
 
 .logo {
