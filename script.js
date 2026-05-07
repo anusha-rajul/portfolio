@@ -42,7 +42,7 @@ function page2Animation() {
     scrollTrigger: {
         trigger: ".projects-section",
         scroller: "body",
-        markers: true,
+        // markers: true,
         start: "top 50%",
         end: "top 0",
         scrub: 2
@@ -116,3 +116,23 @@ function page4Animation() {
 }
 
 page4Animation()
+
+function page5animation() {
+    let tl5 = gsap.timeline({
+        scrollTrigger: {
+            trigger:".contact",
+            scroller: "body",
+           
+         
+          
+        }
+    })
+
+    tl5.from('.contact li', {
+        y: -150,
+        opacity: 0,
+        stagger:0.5
+    })
+}
+
+page5animation()

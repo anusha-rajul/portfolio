@@ -48,10 +48,12 @@ ul {
 .hero-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
+    min-height: 100vh;
+    gap:40px;
     justify-items: center;
     align-items: center;
     background-color: #FFF7E2;
+    padding: 10%;
 }
 .hero-section-content {
     display: flex;
@@ -126,6 +128,8 @@ h2 {
 }
 
 
+/* --------------------------skills and about--------------------- */
+
 .skills-about-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -149,7 +153,41 @@ footer {
 
 .logo {
     width:30px;
+    filter: brightness(0) invert(1)
 }
+.git-link{
+    color: #fff;
+}
+
+
+
+@media (max-width:900px) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:760px) {
+     .hero-section{
+        margin-bottom: 5rem;
+        grid-template-columns: 1fr;
+       
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+    font-size: 4rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .skills-about-section{
+        grid-template-columns: 1fr;
+    }
+
+}
+
 
 
 @media (max-width:500px) {
@@ -160,27 +198,20 @@ footer {
 
     .hero-section{
         margin-bottom: 5rem;
+     
     }
     .projects-section {
         margin-bottom: 5rem;
+
     }
 
     .about-section {
         grid-template-columns: 1fr;
         margin-bottom: 5rem;
     }
-}
 
-@media (max-width:760px) {
-    .grid-container {
-        grid-template-columns: 1fr;
+    footer {
+        gap:10px;
+        flex-direction: column;
     }
-    h1 {
-    font-size: 4rem;
-    }
-    h2 {
-        font-size: 3rem;
-    }
-   
-
 }
