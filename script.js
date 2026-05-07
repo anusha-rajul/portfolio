@@ -35,16 +35,16 @@ function page1Animation() {
     }, "-=0.5")
 }
 
-// page1Animation()
+page1Animation()
 
 function page2Animation() {
     let tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: ".projects-section",
         scroller: "body",
-        // markers: true,
+        markers: true,
         start: "top 50%",
-        end: "top -90%",
+        end: "top 0",
         scrub: 2
     }
     })
@@ -55,32 +55,16 @@ function page2Animation() {
         duration: 0.8
     })
 
-    tl2.from('.grid-item.line1.left', {
-        opacity: 0,
-        x: -100,
-        duration: 0.8
-    })
 
-    tl2.from('.grid-item.line1.right', {
+    tl2.from('.grid-item', {
         opacity: 0,
         x: 100,
-        duration: 0.8
-    })
-
-    tl2.from('.grid-item.line2.left', {
-        opacity: 0,
-        x: -100,
-        duration: 0.8
-    })
-
-    tl2.from('.grid-item.line2.right', {
-        opacity: 0,
-        x: 100,
-        duration: 0.8
+        duration: 0.8,
+        stagger: 0.5
     })
 }
 
-// page2Animation()
+page2Animation()
 
 
 function page3Animation() {
@@ -91,7 +75,7 @@ function page3Animation() {
             scroller: "body",
             // markers: true,
             start: "top 50%",
-            end: "top 0",
+            end: "top 20%",
             scrub: 1
         }
     })
@@ -104,12 +88,13 @@ function page3Animation() {
     tl3.from('.skills-section li', {
         opacity: 0,
         y: -50,
-        stagger: 0.25,
-        duration: 0.5
+        stagger: 0.5,
+        duration: 0.5,
+     
     })
 }
 
-// page3Animation()
+page3Animation()
 
 function page4Animation() {
     let tl4 = gsap.timeline({
@@ -118,15 +103,16 @@ function page4Animation() {
             scroller: "body",
             // markers: true,
             start: "top 50%",
-            end: "top 0",
+            end: "top 20%",
             scrub: 1
         }
     })
 
     tl4.from('.about-section', {
-        scale: 0,
-        duration: 0.5
+        x: -200,
+        opacity: 0,
+        duration: 0.5,
     })
 }
 
-// page4Animation()
+page4Animation()

@@ -27,7 +27,7 @@ ul {
 }
 .navbar {
     padding: 10px;
-    background-color: #EEDBA1;
+    background-color: #FFF7E2;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -51,7 +51,7 @@ ul {
     height: 100vh;
     justify-items: center;
     align-items: center;
-    background-color: #EEDBA1;
+    background-color: #FFF7E2;
 }
 .hero-section-content {
     display: flex;
@@ -85,7 +85,7 @@ h2 {
 
 .projects-section {
     text-align: center;
-    background-color: #112319;
+    background-color: #4F633D;
     padding: 20px;
 }
 
@@ -95,32 +95,35 @@ h2 {
 }
 
 .grid-container {
-    max-width: 1000px;
-    margin: 0 auto;
+    overflow-x: hidden;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap:8rem;
+    grid-template-columns:1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
-    grid-auto-rows: 1fr;
+    color: #fff;
+    gap:20px;
 }
 
 .grid-item {
-    background-color: #EEDBA1;
-    padding: 4rem 8rem;
+    background-color:transparent;
+    padding: 4rem 2rem;
     height: 100%;
+    box-shadow: 10px -10px 20px 10px #303c25;
 }
 .grid-item img {
     max-width:300px;
     width: 100%;
     object-fit: cover;
+
 }
 
 .grid-item ul{
     display: flex;
     gap:20px;
 }
-
+.grid-item a {
+    color: #fff;
+}
 
 
 .skills-about-section {
@@ -129,7 +132,7 @@ h2 {
     justify-items: center;
     align-items: center;
     padding: 50px;
-    background-color: #EEDBA1;
+    background-color: #FFF7E2;
 }
 
 /*------------------------footer----------------------------*/
@@ -140,7 +143,7 @@ footer {
     justify-content: space-around;
     margin-bottom: 10rem;
     padding: 50px;
-    background-color: #112319;
+    background-color: #4F633D;
     color:#fff;
 }
 
