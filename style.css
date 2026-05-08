@@ -86,14 +86,14 @@ h2 {
 /*-------------------------project section--------------------------------*/
 
 .projects-section {
-    text-align: center;
     background-color: #4F633D;
     padding: 20px;
+    font-size: 2rem;
 }
 
 .projects-section h2 {
-    margin-bottom: 5rem;
     color:#fff;
+    text-align: center;
 }
 
 .grid-container {
@@ -111,20 +111,42 @@ h2 {
     padding: 4rem 2rem;
     height: 100%;
     box-shadow: 10px -10px 20px 10px #303c25;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+.grid-item p {
+    font-size: 1.8rem;
 }
 .grid-item img {
     max-width:300px;
     width: 100%;
     object-fit: cover;
+}
 
+.tech {
+     font-size: 1.7rem;
+}
+
+.tech li {
+    border: 1px solid #fae6e6;
+    border-radius: 30px;
+    padding:2px 8px;
 }
 
 .grid-item ul{
     display: flex;
     gap:20px;
+   
 }
 .grid-item a {
     color: #fff;
+    font-size: 1.8rem;
+    border:1px solid #fae6e6;
+    border-radius: 30px;
+    padding: 2px 8px;
 }
 
 
