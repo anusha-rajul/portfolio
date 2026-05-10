@@ -4,7 +4,7 @@ function page1Animation() {
     tl.from('.nav-links li', {
         opacity: 0,
         y: -20,
-        stagger: 0.28,
+        stagger: 0.2,
         duration:0.20
     })
 
@@ -60,7 +60,7 @@ function page2Animation() {
         opacity: 0,
         x: 100,
         duration: 0.8,
-        stagger: 0.5
+        stagger: 0.2
     })
 }
 
@@ -88,7 +88,7 @@ function page3Animation() {
     tl3.from('.skills-section li', {
         opacity: 0,
         y: -50,
-        stagger: 0.5,
+        stagger: 0.2,
         duration: 0.5,
      
     })
@@ -131,7 +131,7 @@ function page5animation() {
     tl5.from('.contact li', {
         y: -150,
         opacity: 0,
-        stagger:0.5
+        stagger:0.2
     })
 }
 
