@@ -5,140 +5,257 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anusha Rajul | Portfolio</title>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
      
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-slate-950">
     <!-- container -->
-    <div class="container">
-        <header>
-            <nav class="navbar">
+    <div class="mx-5">
+        <header class="mb-10">
+            <nav class="flex justify-center bg-slate-900 text-white py-4 rounded-b-lg mb-10">
 
-                <ul class="nav-links">
+                <ul class="flex gap-10">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#about">About me</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <img class="logo menu-icon js-menu" src="images/menu-outline.svg" alt="menu">
+                <!-- <img  src="images/menu-outline.svg" alt="menu"> -->
             </nav>
 
-            <section class="hero-section" id="home">
-                    <div class="hero-section-content">
-                    <h1>I'M ANUSHA RAJUL</h1>
-                    <h2>FRONTEND DEVELOPER</h2>
-                    <p>Frontend developer skilled in building responsive and interactive web applications using React.js, JavaScript, Tailwind CSS, and Bootstrap.</p>
-                    <a class="btn" href="#projects">View Projects</a>
+            <section class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5 justify-items-center items-center text-white">
+                    <div class="flex flex-col gap-5 text-center">
+                    <div>
+                        <h1 class="text-3xl mb-4 font-bold">I'm Anusha Rajul</h1>
+                    <h2 class="text-4xl">FRONTEND DEVELOPER</h2>
                     </div>
-                    <img src="images/undraw_web-development_f0tp.svg" alt="hero-section-illustration">
+                    <p class="text-xl">Frontend developer skilled in building responsive and interactive web applications using React.js, JavaScript, Tailwind CSS, and Bootstrap.</p>
+                    <div>
+                    <button class="bg-zinc-800 text-white px-4 py-2 rounded-md w-1/2 justify-center inline-block">View Resume</button>
+
+                    </div> 
+                                   
+                    </div>
+                    <img class="h-100" src="images/undraw_web-development_f0tp.svg" alt="hero-section-illustration">
 
             </section>
 
         </header>
 
-        <main>
-            <section class="projects-section" id="projects">
-                 <h2>Projects</h2>
-                    <div class="grid-container">
-                        <div class="grid-item line1 left">
+        <main class="text-white my-10">
+            <section class=" mx-auto bg-slate-900" id="projects">
+                 <h2 class="font-semibold text-4xl p-5">Projects</h2>
+                 <div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 p-10 max-w-7xl mx-auto">
+
+
+                        <div class="flex flex-col gap-2 shadow shadow-lg p-3 bg-slate-950 text-white rounded-lg hover:scale-102">
+                        <img src="images/project4.png" alt="project4">
+                        <h3 class="font-semibold text-lg">Job Application Tracker</h3>
+                        <hr class="opacity-50"/>
+                        <p class="text-md">Full-stack MERN application with JWT authentication, Kanban board with drag-and-drop functionality.</p>
+                      <div class="flex flex-col gap-5">
+                         <div >
+                             <ul class="flex flex-wrap gap-2">
+                            <li class="bg-slate-900 border-slate-950 text-slate-200 px-2 py-1 rounded-md">React</li>
+                            <li class="bg-slate-900 border-slate-950 text-slate-200 px-2 py-1 rounded-md">Tailwind</li> 
+                            <li class="bg-slate-900 border-slate-950 text-slate-200 px-2 py-1 rounded-md">Node.js</li>
+                            <li class="bg-slate-900 border-slate-950 text-slate-200 px-2 py-1 rounded-md">Express.js</li> 
+                            <li class="bg-slate-900 border-slate-950 text-slate-200 px-2 py-1 rounded-md">MongoDB</li>
+                        </ul>
+                        </div>
+                       <div class="flex gap-5">
+                         <a class="px-2 py-1 bg-transparent border border-zinc-800 text-zinc-400 rounded-md" href="https://job-tracker-frontend-sigma-one.vercel.app" target="_blank">Live Demo</a>
+                        <a class="px-2 py-1 bg-transparent border border-zinc-800 text-zinc-400 rounded-md" href="https://github.com/anusha-rajul/job-tracker-frontend">Github</a>
+                       </div>
+                      </div>
+                    </div>
+
+                     <div class="flex flex-col gap-2 shadow shadow-lg p-3 bg-slate-950 text-white rounded-lg hover:scale-102">
+                        <img src="images/project5.png" alt="project5">
+                        <h3>Resume Analyzer</h3>
+                        <hr class="opacity-50"/>
+                        <p>Built AI-powered ATS analyzer using Groq API (LLaMA 3) — returns match score, keyword gaps, section 
+scores, and suggestions. </p>
+                       <div class="flex flex-col gap-5">
+                        <div>
+                           
+                             <ul class="flex gap-2">
+                            <li class="bg-slate-900 border-slate-950 text-slate-200 px-2 py-1 rounded-md">React</li>
+                            <li class="bg-slate-900 border-slate-950 text-slate-200 px-2 py-1 rounded-md">Tailwind</li> 
+                            <li class="bg-slate-900 border-slate-950 text-slate-200 px-2 py-1 rounded-md">Groq API</li>
+                        </ul>
+                        </div>
+                       <div class="flex gap-5">
+                         <a class="px-2 py-1 bg-transparent border border-zinc-800 text-zinc-400 rounded-md" href="https://resume-analyzer-sandy-phi.vercel.app" target="_blank">Live Demo</a>
+                        <a class="px-2 py-1 bg-transparent border border-zinc-800 text-zinc-400 rounded-md" href="https://github.com/anusha-rajul/resumeAnalyzer">Github</a>
+                       </div>
+                       </div>
+                    </div>
+
+
+                        <div class="flex flex-col gap-2 shadow shadow-lg p-3 bg-slate-950 text-white rounded-lg hover:scale-102">
                         <img src="images/dashboard.png" alt="project1">
                         <h3>Dashboard</h3>
+                        <hr class="opacity-50"/>
                         <p>Responsive dashboard with interactive charts, loading skeleton effect using React and Recharts. </p>
-                        <div class="tech"> <p>Technologies Used: </p>
-                        <ul>
-                            <li>React</li>
-                            <li>Recharts</li>
-                            <li>Tailwind</li>
+                       <div class="flex flex-col gap-5">
+                         <div >
+                        <ul class="flex gap-2">
+                            <li class="bg-slate-900 border-slate-950 text-slate-200 px-2 py-1 rounded-md">React</li>
+                            <li class="bg-slate-900 border-slate-950 text-slate-200 px-2 py-1 rounded-md">Recharts</li>
+                            <li class="bg-slate-900 border-slate-950 text-slate-200 px-2 py-1 rounded-md">Tailwind</li>
                         </ul>
                         </div>
-                        <div>
-                        <a href="https://anusha-rajul.github.io/dashboard" target="_blank">Live Demo</a>
-                        <a href="https://github.com/anusha-rajul/dashboard" target="_blank">Github</a>
+                        <div class="flex gap-5">
+                        <a class="px-2 py-1 bg-transparent border border-zinc-800 text-zinc-400 rounded-md" href="https://anusha-rajul.github.io/dashboard" target="_blank">Live Demo</a>
+                        <a class="px-2 py-1 bg-transparent border border-zinc-800 text-zinc-400 rounded-md" href="https://github.com/anusha-rajul/dashboard" target="_blank">Github</a>
                         </div>
+                       </div>
                     </div>
 
-                    <div class="grid-item line1 right">
+                    <div class="flex flex-col gap-2 shadow shadow-lg p-3 bg-slate-950 text-white rounded-lg hover:scale-102">
                         <img src="images/e-commerce.png" alt="project1">
                         <h3>E-Commerce Frontend</h3>
+                        <hr class="opacity-50"/>
                         <p>Responsive E-commerce frontend using API with filters, cart.</p>
-                        <div class="tech">
-                            <p>Technologies Used: </p>
-                             <ul>
-                            <li>React</li>
-                            <li>Tailwind</li>
+                        <div class="flex flex-col gap-5">
+                            <div>
+                           
+                             <ul class="flex gap-2">
+                            <li class="bg-slate-900 border-slate-950 text-slate-200 px-2 py-1 rounded-md">React</li>
+                            <li class="bg-slate-900 border-slate-950 text-slate-200 px-2 py-1 rounded-md">Tailwind</li>
                         </ul>
                         </div>
-                       <div>
-                         <a href="https://e-commerce-frontend-three-eosin.vercel.app/" target="_blank">Live Demo</a>
-                        <a href="https://github.com/anusha-rajul/e-commerce-frontend">Github</a>
+                       <div class="flex gap-5">
+                         <a class="px-2 py-1 bg-transparent border border-zinc-800 text-zinc-400 rounded-md" href="https://e-commerce-frontend-three-eosin.vercel.app/" target="_blank">Live Demo</a>
+                        <a class="px-2 py-1 bg-transparent border border-zinc-800 text-zinc-400 rounded-md" href="https://github.com/anusha-rajul/e-commerce-frontend">Github</a>
                        </div>
+                        </div>
                     </div>
 
-                    <div class="grid-item line2 left">
+                    <div class="flex flex-col gap-2 shadow shadow-lg p-3 bg-slate-950 text-white rounded-lg hover:scale-102">
                         <img src="images/project3.png" alt="project1">
                         <h3>Landing page</h3>
+                        <hr class="opacity-50"/>
                         <p>Converted design into responsive page from frontend mentor.</p>
-                       <div class="tech">
-                            <p>Technologies Used: </p>
-                             <ul>
-                            <li>Html</li>
-                            <li>Bootstrap</li>  
+                      <div class="flex flex-col gap-5">
+                         <div >
+                            
+                           <ul class="flex gap-2">
+                            <li class="bg-slate-900 border-slate-950 text-slate-200 px-2 py-1 rounded-md">Html</li>
+                            <li class="bg-slate-900 border-slate-950 text-slate-200 px-2 py-1 rounded-md">Bootstrap</li>  
                         </ul>
                         </div>
-                       <div>
-                         <a href="https://anusha-rajul.github.io/E-commerce-product-page" target="_blank">Live Demo</a>
-                        <a href="https://github.com/anusha-rajul/E-commerce-product-page">Github</a>
+                       <div class="flex gap-5">
+                         <a class="px-2 py-1 bg-transparent border border-zinc-800 text-zinc-400 rounded-md" href="https://anusha-rajul.github.io/E-commerce-product-page" target="_blank">Live Demo</a>
+                        <a class="px-2 py-1 bg-transparent border border-zinc-800 text-zinc-400 rounded-md" href="https://github.com/anusha-rajul/E-commerce-product-page">Github</a>
                        </div>
+                      </div>
                     </div>
+
+                      
                    
                     </div>
+                </div>
                     
           
             </section>
 
-            <section class="skills-about-section">
+            <section >
 
-                 <div class="about-section " id="about">
-                <h2>About Me</h2>
-                
-                <p>
+                 <div class="text-center m-10"  id="about">
+                <h2 class="text-4xl font-semibold">About Me</h2>
+                <div class="grid grid-cols-1 gap-3 md:grid-cols-2 m-5 justify-items-center items-center">
+                    <p class="text-lg ">
                     Hi, I'm Anusha Rajul, a Frontend Developer skilled in building responsive, user-friendly, and interactive web applications using React.js, Tailwind CSS, and Bootstrap.
-
 I enjoy creating modern web interfaces and continuously learning new technologies to improve my frontend development skills.
                 </p>
+                <div class="bg-slate-800 px-20 py-5 rounded-lg border border-zinc-500">
+
+                    <div class="flex items-center gap-5 m-3">
+                        <div class=" bg-slate-900 p-1 rounded-md "><img class="w-6 invert brightness-0" src="images/mail-outline.svg" alt="mail" /></div>
+                        <div class="flex flex-col items-start">
+                            <h3 class="font-semibold">Email</h3>
+                        <p class="text-zinc-300">rajulanusha@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <hr class="opacity-50" />
+
+                    <div class="flex items-center gap-5 m-3">
+                        <div class=" bg-slate-900 p-1 rounded-md "><img class="w-6 invert brightness-0" src="images/location-outline.svg" alt="mail" /></div>
+                        <div class="flex flex-col items-start">
+                            <h3 class="font-semibold">Location</h3>
+                        <p class="text-zinc-300">Solapur, Maharashtra.</p>
+                        </div>
+                    </div>
+
+                    <hr class="opacity-50" />
+
+                      <div class="flex items-center gap-5 m-3">
+                        <img class="w-8" src="" alt="mail" />
+                        <div class="flex flex-col items-start">
+                            <h3 class="font-semibold">Availability</h3>
+                        <p class="text-zinc-300">Open to work</p>
+                        </div>
+                    </div>
+
+                      <hr class="opacity-50" />
+
+                      <div class="flex items-center gap-5 m-3">
+                        <img class="w-8" src="" alt="mail" />
+                        <div class="flex flex-col items-start">
+                            <h3 class="font-semibold">Currently Learning</h3>
+                        <p class="text-zinc-300">Next.js TypeScript</p>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
             </div>
 
-                <div class="skills-section" id="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>React</li>
-                    <li>Tailwind</li>
-                    <li>Bootstrap</li>
+                <div class="text-center bg-slate-900 py-10 px-20" id="skills">
+                <h2 class="text-4xl font-semibold m-5">Skills</h2>
+                <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-3 text-lg text-white">
+                    <li class="bg-slate-950 w-40 py-3 rounded-lg border border-slate-600">HTML</li>
+                    <li class="bg-white w-40 py-3 rounded-lg">CSS</li>
+                    <li class="bg-white w-40 py-3 rounded-lg">Javascript</li>
+                    <li class="bg-white w-40 py-3 rounded-lg">React</li>
+                    <li class="bg-white w-40 py-3 rounded-lg">Tailwind</li>
+                    <li class="bg-white w-40 py-3 rounded-lg">Bootstrap</li>
+                    <li class="bg-white w-40 py-3 rounded-lg">Express.js</li>
+                    <li class="bg-white w-40 py-3 rounded-lg">MongoDB</li>
                 </ul>
+                
             </div>
 
            
             </section>
+
+            <section class="m-5">
+                <h2 class="text-4xl font-semibold my-5">Contact Me</h2>
+                <div class="max-w-6xl mx-auto text-center flex flex-col gap-10">
+                    <h3 class="text-zinc-400 text-xl">I'm currently open to frontend developer roles and internship opportunities.</h3>
+                    <div class="flex flex-wrap gap-10 justify-center">
+                        <button class="px-8 py-3 bg-slate-900 border  border-zinc-700 rounded-md">rajulanusha@gmail.com</button>
+                        <button class="px-8 py-3 bg-slate-900 border  border-zinc-700 rounded-md">9890409618</button>
+
+                        <a class="px-8 py-3 bg-slate-900  border  border-zinc-700 rounded-md" href="https://github.com/anusha-rajul">Github</a>
+                        <a class="px-8 py-3 bg-slate-900  border  border-zinc-700 rounded-md" href="https://www.linkedin.com/in/anusha-rajul-66b7652a0/">LinkedIn</a>
+                    </div>
+                </div>
+            </section>
         </main>
 
-        <footer id="contact">
-            <ul class="contact">
-                <li><img class="logo" src="images/mail-outline.svg" alt="email" > rajulanusha@gmail.com</li>
-                <li><img class="logo" src="images/call-outline.svg" alt="call"> 9890409618</li>
-                <li><img class="logo" src="images/location-outline.svg" alt="location"> Solapur, India</li>
-            </ul>
-            <ul>
-                <li><a class="git-link" href="https://github.com/anusha-rajul"><img class="logo" src="images/logo-github.svg" alt="github">Github Link</a></li>
-            </ul>
-        </footer>
+      
+
+
         
     </div>
 
