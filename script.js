@@ -1,140 +1,220 @@
 
+function animation() {
+    let tl = gsap.timeline();
 
-function page1Animation() {
-    let tl = gsap.timeline()
-
-    tl.from('.nav-links li', {
-        opacity: 0,
-        y: -20,
-        stagger: 0.2,
-        duration:0.20
-    })
-
-    tl.from('h1', {
-        opacity: 0,
-        y: -50,
-        duration: 0.8,
-    })
-
-    tl.from('.hero-section h2', {
-        opacity: 0,
-        x: -500,
-        duration: 0.5
-    })
-    tl.from('.hero-section p', {
-        opacity: 0,
-        x: 500,
-        duration: 0.5
-    })
-    tl.from('.hero-section a', {
-        opacity: 0,
+    tl.from('#header-text h1', {
         y: 50,
-        duration: 0.5
-    })
-    tl.from('.hero-section img', {
-        scale: 0,
-        duration: 0.9
-    }, "-=0.5")
-}
-
-page1Animation()
-
-function page2Animation() {
-    let tl2 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".projects-section",
-        scroller: "body",
-        // markers: true,
-        start: "top 50%",
-        end: "top 0",
-        scrub: 2
-    }
-    })
-
-    tl2.from('.projects-section h2', {
+        duration: 0.6,
         opacity: 0,
-        y: -100,
-        duration: 0.8
-    })
-
-
-    tl2.from('.grid-item', {
-        opacity: 0,
-        x: 100,
-        duration: 0.8,
         stagger: 0.2
     })
-}
 
-page2Animation()
-
-
-function page3Animation() {
+    tl.from('#img', {
+        x: 50,
+        opacity: 0,
+        duration:0.8
+    }, '-=0.5')
     
+    
+    let tl2 = gsap.timeline({
+        scrollTrigger: {
+            trigger: '#projects',
+            scroller: 'body',
+            start: 'top 50%',
+            end: 'top 20%',
+        }
+    });
+    tl2.from('#projects #card', {
+        opacity: 0,
+        x: 50,
+        duration: 0.6,
+        stagger:0.2
+    })
+
     let tl3 = gsap.timeline({
         scrollTrigger: {
-            trigger: ".skills-section",
-            scroller: "body",
-            // markers: true,
-            start: "top 50%",
-            end: "top 20%",
-            scrub: 1
+            trigger: '#about',
+            scroller: 'body',
+            start: 'top 50%',
+            end: 'top 30%'
         }
     })
-
-    tl3.from('.skills-section h2', {
+     tl3.from('#about p', {
         opacity: 0,
-        y: -100,
-        duration: 0.8
+        y: 50,
+        duration: 0.8,
+    
     })
-    tl3.from('.skills-section li', {
-        opacity: 0,
-        y: -50,
-        stagger: 0.2,
-        duration: 0.5,
-     
-    })
-}
 
-page3Animation()
-
-function page4Animation() {
-    let tl4 = gsap.timeline({
+     let tl4 = gsap.timeline({
         scrollTrigger: {
-            trigger: ".about-section",
-            scroller: "body",
-            // markers: true,
-            start: "top 50%",
-            end: "top 20%",
-            scrub: 1
-        }
-    })
-
-    tl4.from('.about-section', {
-        x: -200,
-        opacity: 0,
-        duration: 0.5,
-    })
-}
-
-page4Animation()
-
-function page5animation() {
-    let tl5 = gsap.timeline({
-        scrollTrigger: {
-            trigger:".contact",
-            scroller: "body",
+            trigger: '#skills',
+            scroller: 'body',
+            start: 'top 50%',
+             end: 'top 30%',
            
-         
-          
         }
+    });
+    tl4.from('#skills li', {
+        opacity: 0,
+        x: 50,
+        duration: 0.6,
+        stagger:0.2
     })
 
-    tl5.from('.contact li', {
-        y: -150,
+     let tl5 = gsap.timeline({
+        scrollTrigger: {
+            trigger: '#contact',
+            scroller: 'body',
+            start: 'top 95%',
+            end: 'top 0%',
+            // markers:true
+        }
+    });
+    tl5.from('#contact #btn', {
         opacity: 0,
+        y: 50,
+        duration: 0.6,
         stagger:0.2
     })
 }
 
-page5animation()
+animation()
+// function page1Animation() {
+//     let tl = gsap.timeline()
+
+//     tl.from('.nav-links li', {
+//         opacity: 0,
+//         y: -20,
+//         stagger: 0.2,
+//         duration:0.20
+//     })
+
+//     tl.from('h1', {
+//         opacity: 0,
+//         y: -50,
+//         duration: 0.8,
+//     })
+
+//     tl.from('.hero-section h2', {
+//         opacity: 0,
+//         x: -500,
+//         duration: 0.5
+//     })
+//     tl.from('.hero-section p', {
+//         opacity: 0,
+//         x: 500,
+//         duration: 0.5
+//     })
+//     tl.from('.hero-section a', {
+//         opacity: 0,
+//         y: 50,
+//         duration: 0.5
+//     })
+//     tl.from('.hero-section img', {
+//         scale: 0,
+//         duration: 0.9
+//     }, "-=0.5")
+// }
+
+// page1Animation()
+
+// function page2Animation() {
+//     let tl2 = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: ".projects-section",
+//         scroller: "body",
+//         // markers: true,
+//         start: "top 50%",
+//         end: "top 0",
+//         scrub: 2
+//     }
+//     })
+
+//     tl2.from('.projects-section h2', {
+//         opacity: 0,
+//         y: -100,
+//         duration: 0.8
+//     })
+
+
+//     tl2.from('.grid-item', {
+//         opacity: 0,
+//         x: 100,
+//         duration: 0.8,
+//         stagger: 0.2
+//     })
+// }
+
+// page2Animation()
+
+
+// function page3Animation() {
+    
+//     let tl3 = gsap.timeline({
+//         scrollTrigger: {
+//             trigger: ".skills-section",
+//             scroller: "body",
+//             // markers: true,
+//             start: "top 50%",
+//             end: "top 20%",
+//             scrub: 1
+//         }
+//     })
+
+//     tl3.from('.skills-section h2', {
+//         opacity: 0,
+//         y: -100,
+//         duration: 0.8
+//     })
+//     tl3.from('.skills-section li', {
+//         opacity: 0,
+//         y: -50,
+//         stagger: 0.2,
+//         duration: 0.5,
+     
+//     })
+// }
+
+// page3Animation()
+
+// function page4Animation() {
+//     let tl4 = gsap.timeline({
+//         scrollTrigger: {
+//             trigger: ".about-section",
+//             scroller: "body",
+//             // markers: true,
+//             start: "top 50%",
+//             end: "top 20%",
+//             scrub: 1
+//         }
+//     })
+
+//     tl4.from('.about-section', {
+//         x: -200,
+//         opacity: 0,
+//         duration: 0.5,
+//     })
+// }
+
+// page4Animation()
+
+// function page5animation() {
+//     let tl5 = gsap.timeline({
+//         scrollTrigger: {
+//             trigger:".contact",
+//             scroller: "body",
+           
+         
+          
+//         }
+//     })
+
+//     tl5.from('.contact li', {
+//         y: -150,
+//         opacity: 0,
+//         stagger:0.2
+//     })
+// }
+
+// page5animation()
